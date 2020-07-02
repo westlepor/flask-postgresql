@@ -25,7 +25,7 @@ And your app will be up on the *port 3000* !
 
 ##### Using Docker Toolbox
 
-This project was implemented with [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/), which need some fixes ([read my article on medium for more information](https://medium.com/@thimblot/using-docker-on-windows-without-hyper-v-troubleshooting-tips-2949587f796a)) before running the `docker-compose up` command.
+This project was implemented with [Docker Toolbox](https://docs.docker.com/toolbox/toolbox_install_windows/), which need some fixes before running the `docker-compose up` command.
 That's the goal of the `docker-compose-up.sh` file at the root of the project, use it instead of the `docker-compose up` command if you are running Docker with the Toolbox.
 
 Flask and ReactJS part of the application use the IP adress / port for containers communication (see `config.py` and `config.js`). You can normally use the name of the service located on the docker-compose.yml, but it doesn't seems to work using Docker Toolbox !
